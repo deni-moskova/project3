@@ -17,4 +17,24 @@
     font-display: swap;
 }
 
-body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px; }
+body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px; color: #737c85; }
+ul { list-style: none outside none; }
+a { text-decoration: none; }
+.container { margin: 0 auto; width: 960px; position: relative; }
+
+/*header*/ 
+.header { background: url(images/organic-cover.jpg) no-repeat 0 0/cover; width: 100%; height: 934px; font-family: 'Lato', sans-serif; font-size: 15px; line-height: 19px; color: #fff; }
+.header:before{content: '';  background: url(images/organic-logo.png)no-repeat 0 0; width: 73px; height: 73px; display: block; position: absolute; top:0; left: 0; margin-left: 25px; }
+.header:after { content:'';  background-color: rgb(255, 255, 255);  opacity: 0.502; width: 100%; height: 60px; left: 0; bottom: -40px; position: absolute;  }
+.header .menu {  font-weight: bold; display: flex; align-items: center; justify-content: flex-start; height: 73px;}
+.header .menu ul { position: relative;   }
+.header .menu ul li { display: inline; text-transform: capitalize;padding-left: 75px; position: relative;}
+.header .menu ul li:first-child:after,
+.header .menu ul li:nth-child(2):after,
+.header .menu ul li:nth-child(3):after
+ { content: ''; background: url(images/arrow.png) no-repeat 0 0; width: 5px; height: 4px; display: block; position: absolute; right: -15px; top: 50%; cursor: pointer;}
+.header .menu a { color: #fff; }
+.header .menu ul li a:hover { color: #737c85;  }
+.header .container .left { float: left; width: 50%; font-family: 'Lato', sans-serif; margin-top: 140px;}
+.header .container h1 { font-size: 52px; line-height:62px; font-weight: 300; padding-bottom: 35px; }
+.main:before {  content:'';  background-color: #fff; width: 100%; height: 50px; left: 0; bottom: -60px; position: absolute; transform: rotate(1deg); }

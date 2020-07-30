@@ -18,6 +18,7 @@
 }
 
 body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 18px; color: #737c85; }
+h2 { padding: 30px 0; }
 ul { list-style: none outside none; }
 a { text-decoration: none; }
 .container { margin: 0 auto; width: 960px; position: relative; }
@@ -37,19 +38,26 @@ a { text-decoration: none; }
 .header .menu ul li a:hover { color: #737c85;  }
 .header .container .left { float: left; width: 50%; font-family: 'Lato', sans-serif; margin-top: 140px;}
 .header .container h1 { font-size: 52px; line-height:62px; font-weight: 300; padding-bottom: 35px; }
+
+/*Main*/
 .main { font-family: 'Lato', sans-serif; margin: 50px 0; }
 .main:before {  content:'';  background-color: #fff; width: 100%; height: 50px; left: 0; bottom: -60px; position: absolute; transform: rotate(1deg); }
-.main .container .quote { float: left;  width: 50%; margin: 50px 0; }
+.main h2 { color: #fe992a; }
+.main .container .quote { float: left;  width: 50%; margin: 50px 0; position: relative; }
 .main .container .quote > blockquote { color: #fe992a; font-size: 20px; line-height: 24px; font-style: italic;  padding-right:  100px; position: relative;}
  .main .container .quote > blockquote:before, .main .container .quote > blockquote:after { content: '"'; font-size: 48px;  line-height: 52px; position: absolute; display: block; }
  .main .container .quote > blockquote:before { top:-25px; left: 0; }
 .main .container .quote > blockquote:after { bottom:-50px; left: 50px; }
 
 .main .container .prev, .main .container .next { font-size: 0; line-height: 0; text-indent: -999px; width: 30px; height: 30px; position: absolute; margin-top: 50px; }
-.main .container .prev { background-color: #fe992a;}
-.main .container .next { background-color: #ffba6e; left: 30px; }
+.main .container .prev { background-color: #fe992a; right: 30px;}
+.main .container .next { background-color: #ffba6e; right: 0; }
 .main .container .prev span, .main .container .next span { border: 1px solid #fff; border-width: 0 2px 2px 0; display: inline-block; padding: 3px; top: 32%; right: 50%; position: absolute;  }
 .main .container .prev span {transform: rotate(145deg); left: 50%; }
 .main .container .next span {transform: rotate(-45deg);}
 /*footer*/
-.footer  { padding: 100px 0; clear: both; }
+.footer { padding: 100px 0; clear: both;  background-color: #e87775; color: #fff; font-family: 'Droid Sans'; font-style: 12px; line-height: 16px; }
+.footer a { color: #fff; }
+.footer .container .links { display: flex; justify-content: space-between; align-items: flex-start; } 
+.footer .container .links > ul li { padding-bottom: 14px; }
+.footer .container .links > ul li:first-child { font-weight: bold; }

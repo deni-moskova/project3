@@ -24,9 +24,9 @@ a { text-decoration: none; }
 .container { margin: 0 auto; width: 960px; position: relative; }
 
 /*header*/ 
-.header { background: url(images/organic-cover.jpg) no-repeat 0 0/cover; width: 100%; height: 934px; font-family: 'Lato', sans-serif; font-size: 15px; line-height: 19px; color: #fff; }
+.header { background: url(images/organic-cover.jpg) no-repeat 0 0/cover; width: 100%; height: 934px; font-family: 'Lato', sans-serif; font-size: 15px; line-height: 19px; color: #fff; position: relative; }
 .header:before{content: '';  background: url(images/organic-logo.png)no-repeat 0 0; width: 73px; height: 73px; display: block; position: absolute; top:0; left: 0; margin-left: 25px; cursor: pointer; }
-.header:after { content:'';  background-color: rgb(255, 255, 255);  opacity: 0.502; width: 100%; height: 60px; left: 0; bottom: -40px; position: absolute;  }
+.header:after { content:'';  background-color: rgb(255, 255, 255);  opacity: 0.502; width: 100%; height: 60px; left: 0; bottom: -20px; position: absolute;  }
 .header .menu {  font-weight: bold; display: flex; align-items: center; justify-content: flex-start; height: 73px;}
 .header .menu ul { position: relative;   }
 .header .menu ul li { display: inline; text-transform: capitalize;padding-left: 75px; position: relative;}
@@ -41,7 +41,7 @@ a { text-decoration: none; }
 
 /*Main*/
 .main { font-family: 'Lato', sans-serif; margin: 50px 0; }
-.main:before {  content:'';  background-color: #fff; width: 100%; height: 50px; left: 0; bottom: -60px; position: absolute; transform: rotate(1deg); }
+.main:before {  content:'';  background-color: #fff; width: 100%; height: 50px; left: 0; /*bottom: -60px;*/ position: absolute; transform: rotate(1deg); }
 .main h2 { color: #fe992a; }
 .main .container .quote { float: left;  width: 50%; margin: 50px 0; position: relative; }
 .main .container .quote > blockquote { color: #fe992a; font-size: 20px; line-height: 24px; font-style: italic;  padding-right:  100px; position: relative;}

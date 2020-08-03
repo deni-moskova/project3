@@ -21,6 +21,7 @@ body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 
 h2 { padding: 30px 0; }
 ul { list-style: none outside none; }
 a { text-decoration: none; }
+.wrapper { display: block; overflow: hidden; }
 .container { margin: 0 auto; width: 960px; position: relative; }
 
 /*header*/ 
@@ -66,3 +67,8 @@ a { text-decoration: none; }
 .footer .container .links { display: flex; justify-content: space-between; align-items: flex-start; } 
 .footer .container .links > ul li { padding-bottom: 14px; }
 .footer .container .links > ul li:first-child { font-weight: bold; }
+
+
+@media only screen and (min-width: 1190px){
+    
+}
